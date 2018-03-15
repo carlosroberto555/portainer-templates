@@ -1,0 +1,30 @@
+[
+  {
+    "type": "container",
+    "title": "WordPress VH",
+    "description": "A free and open-source CMS",
+    "categories": ["CMS"],
+    "platform": "linux",
+    "logo": "https://cloudinovasi.id/assets/img/logos/wordpress.png",
+    "image": "wordpress:latest",
+    "env": [
+      {
+        "name": "WORDPRESS_DB_HOST",
+        "label": "MySQL database host",
+        "type": "container"
+      },
+      {
+        "name": "WORDPRESS_DB_PASSWORD",
+        "label": "Database password"
+      },
+      {
+        "name": "VIRTUAL_HOST",
+        "label": "Virtual host name"
+      }
+    ],
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": ["/var/www/html"]
+  }
+]
