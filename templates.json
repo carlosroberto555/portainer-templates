@@ -44,7 +44,7 @@
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/wordpress.png",
     "image": "php:apache",
-    "ports: [
+    "ports": [
       "80/tcp"
     ],
     "env": [
