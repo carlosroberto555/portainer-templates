@@ -42,7 +42,6 @@
     "description": "Server PHP with git auto-deploy",
     "categories": ["webserver"],
     "platform": "linux",
-    "logo": "https://cloudinovasi.id/assets/img/logos/wordpress.png",
     "image": "php:apache",
     "ports": [
       "80/tcp"
