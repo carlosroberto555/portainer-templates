@@ -56,7 +56,7 @@
         "name": "VIRTUAL_HOST",
         "label": "Virtual host url"
       }
-    ]
+    ],
     "volumes": ["/var/www/html/"]
   },
   {
