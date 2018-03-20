@@ -36,16 +36,13 @@
     "volumes": ["/var/www/html"]
   },
   {
-    "title": "PHP GIT",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
     "type": "container",
+    "title": "PHP GIT",
     "description": "Server PHP with git auto-deploy",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
     "categories": ["webserver"],
     "platform": "linux",
     "image": "php:apache",
-    "ports": [
-      "80/tcp"
-    ],
     "env": [
       {
         "name": "GIT_URL",
@@ -55,6 +52,9 @@
         "name": "VIRTUAL_HOST",
         "label": "Virtual host url"
       }
+    ],
+    "ports": [
+      "80/tcp"
     ],
     "volumes": ["/var/www/html/"]
   },
