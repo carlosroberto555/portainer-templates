@@ -36,6 +36,30 @@
     "volumes": ["/var/www/html"]
   },
   {
+    "title": "PHP GIT",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
+    "type": "container",
+    "description": "Server PHP with git auto-deploy",
+    "categories": ["webserver"],
+    "platform": "linux",
+    "logo": "https://cloudinovasi.id/assets/img/logos/wordpress.png",
+    "image": "php:apache",
+    "ports: [
+      "80/tcp"
+    ],
+    "env": [
+      {
+        "name": "GIT_URL",
+        "label": "Git url"
+      },
+      {
+        "name": "VIRTUAL_HOST",
+        "label": "Virtual host url"
+      }
+    ]
+    "volumes": ["/var/www/html/"]
+  },
+  {
     "type": "container",
     "title": "Registry",
     "description": "Docker image registry",
